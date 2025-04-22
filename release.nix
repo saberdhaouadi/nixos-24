@@ -8,7 +8,7 @@ let
     imports = [
       "${nixpkgs}/nixos/maintainers/scripts/ec2/amazon-image.nix"
     ];
-    nixpkgs.hostPlatform = "x86_64-linux";
+   # nixpkgs.hostPlatform = "x86_64-linux";
     # Optional: Add custom configurations
     services.sshd.enable = true;
     environment.systemPackages = with pkgs; [ git vim ];
